@@ -1,0 +1,30 @@
+.statistics {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+
+  .statistics h2 {
+    margin-bottom: 10px;
+  }
+  .statistics .protocol h3 {
+    margin-bottom: 10px;
+  }
+  
+  .statistics .protocol ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .statistics .protocol li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .statistics .protocol li span {
+    color: #333;
+  }
