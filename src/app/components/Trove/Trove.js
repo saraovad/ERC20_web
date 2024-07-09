@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import './Trove.css';
+import '../Css/common.css';
 import Statistics from '../Statistics/Statistics';
 
 function Trove() {
@@ -12,22 +12,22 @@ function Trove() {
   };
 
   return (
-    <div className="trove-container">
-      <div className="trove">
+    <div className="container">
+      <div className="card">
         <h2>Trove</h2>
         <p><i className="fas fa-info-circle"></i> You haven't borrowed any USDM yet.</p>
         <p>You can borrow USDM by opening a Trove.</p>
-        <button className="open-trove-button" onClick={handleOpenTrove}>Open Trove</button>
+        <button className="button" onClick={handleOpenTrove}>Open Trove</button>
       </div>
       
       {isTroveOpen && (
-        <div className="trove-details">
-          <div className="collateral">
+        <div className="card">
+          <div className="input-group">
             <h3>Collateral</h3>
             <input type="text" placeholder="0.0000 ETH" />
-            <button className="max-button">max</button>
+            <button className="button">max</button>
           </div>
-          <div className="borrow">
+          <div className="input-group">
             <h3>Borrow</h3>
             <input type="text" placeholder="0.00 USDM" />
           </div>
@@ -37,8 +37,8 @@ function Trove() {
             <p>Total debt <span>20.00 USDM</span></p>
             <p>Collateral ratio <span>N/A</span></p>
           </div>
-          <button className="confirm-button">Confirm</button>
-          <button className="cancel-button" onClick={() => setIsTroveOpen(false)}>Cancel</button>
+          <button className="button">Confirm</button>
+          <button className="button" onClick={() => setIsTroveOpen(false)}>Cancel</button>
         </div>
       )}
       
