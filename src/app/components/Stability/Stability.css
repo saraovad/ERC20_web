@@ -1,9 +1,9 @@
-.Stability-container {
+.stability-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background-color: #1d0652;
+    background-color: #fafafc;
   }
   
   .Stability{
@@ -24,7 +24,7 @@
   }
   
   .deposit-button {
-    background-color: #1d0652;
+    background-color: #1A73E8;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -50,7 +50,7 @@
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   }
   
-  .open-trove-button, .confirm-button, .cancel-button, .max-button {
+  .deposit-button, .confirm-button, .cancel-button, .max-button {
     background-color: #1A73E8;
     color: white;
     border: none;
@@ -63,11 +63,48 @@
     background-color: #155AB6;
   }
 
-  **************************************************
-  .collateral, .borrow {
+
+
+  
+  ****************************************
+  
+  .deposit, .poolShare {
     margin: 10px 0;
   }
-  .collateral input, .borrow input {
+  
+  .deposit input, .poolShare input {
+    width: calc(100% - 60px);
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .max-button {
+    padding: 10px;
+  }
+  
+  .trove-info {
+    margin-top: 10px;
+  }
+  
+  .trove-info p {
+    margin: 5px 0;
+  }
+
+
+
+
+
+
+
+
+
+  **************************************************
+  .deposit, .poolShare{
+    margin: 10px 0;
+  }
+  .deposit input, .poolShare input {
     width: calc(100% - 60px);
     padding: 10px;
     margin-right: 10px;
